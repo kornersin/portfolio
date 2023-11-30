@@ -2,7 +2,7 @@ body{
     font-family: Lato, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f5f5f5 !important;
+    background-color: #353535 !important;
 }
 #working{
     display: flex;
@@ -46,10 +46,10 @@ nav li {
 .title{
     font-weight: bold;
     font-size: 2.5rem;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 16px 0;
-    color: #2d2d2d;
+    color: #f5f5f5;
 }
 
 .subtitle{
@@ -61,17 +61,20 @@ nav li {
     font-weight: bold;
     padding: 16px 0;
     font-size: 4rem;
-    color: #2d2d2d;
+    color: #f5f5f5;
 }
 .subtitle_pages{
     font-weight: 500;
-    color: #2d2d2d;
+    color: #f5f5f5;
 }
 header{
     background-color: #d4d4d4;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+header img{
+    width: 100%;
 }
 .profile_img{
     background-image: url(./assets/img/body/profile_2.jpg);
@@ -100,9 +103,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 95%;
     background-color: rgba(38,58,74,0.51);
-    box-shadow: 4px 8px 16px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 8px 16px 2px rgba(184, 184, 184, 0.5);
     border-radius: 8px;
     margin: 0 auto;
     padding: 16px;
@@ -113,7 +116,7 @@ header{
     font-weight: bolder;
 }
 .description p{
-    width: 65%;
+    width: 70%;
     text-align: justify;
 }
 
@@ -122,15 +125,16 @@ header{
     padding: 2rem 0;
 }
 #projects{
-    background-color: #e1e1e1;
+    /* background-color: #e1e1e1; */
     color: #f5f5f5;
     padding: 1rem 0;
 }
 .project-cards{
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
     margin: 2rem auto;
 }
 .card h4{
@@ -143,20 +147,24 @@ header{
 }
 .card{
     padding: 8px;
-    box-shadow: 6px 8px 16px 0 rgba(0,0,0,0.35);
+    /* box-shadow: 6px 8px 16px 0 rgba(12, 138, 230, 1); */
     border-radius: 16px !important;
-    width: 263px;
+    width: 400px !important;
 }
 .card:hover{
     transform: scale(1.025, 1.025);
-    box-shadow: 6px 8px 16px 0 rgba(0,0,0,0.35);
+    box-shadow: 6px 8px 16px 0 rgba(12, 138, 230, 0.5);
 
 }
 .card img{
     height: 200px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 8px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
 }
 .btn{
     height: 32px;
@@ -167,14 +175,14 @@ header{
     margin-bottom: 8px;
 }
 .btn-primary{
-    background-color: #569dd5 !important;
+    background-color: #208bdd !important;
     border: none !important;
     color: #1d1d1d !important;
     margin: 0 auto;
 }
 .btn-primary:hover{
-    background-color: #5BC8EA !important;
-    color: #1d1d1d !important;
+    background-color: #569dd5 !important;
+    /* color: #1d1d1d !important; */
     border: none !important;
 }
 .btn-secondary{
@@ -183,7 +191,7 @@ header{
     padding: 24px !important;
     border-radius: 20px !important;
     color: #f5f5f5 !important;
-    background-color: #ff0aba !important;
+    background-color: #208bdd !important;
     border: none !important;
     width: 250px !important;
     font-weight: 600 !important;
@@ -197,49 +205,50 @@ header{
     padding: 24px;
     border-radius: 20px;
     color: #f5f5f5;
-    background-color: #e006a3;
+    background-color: #569dd5 !important;
     border: none;
     width: 250px;
     font-weight: 600;
     letter-spacing: 2px;
     -webkit-box-pack: center;
     text-transform: uppercase;
-    box-shadow: 4px 4px 6px 2px #569dd5;
+    /* box-shadow: 4px 4px 6px 2px #569dd5; */
 }
 #skills{
     color: #f5f5f5;
     padding: 1rem 0 ;
 }
 #contact{
-    background-color: #e1e1e1;
+    /* background-color: #e1e1e1; */
     color: #f5f5f5;
     padding: 2rem 0 0 0;
 }
 .inner_contact{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 .img-contact{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 2rem;
     padding-bottom: 16px;
 }
-.img-contact div{
+/* .img-contact div{
     margin: 0 auto;
-}
+} */
 .contactImg{
     width: 80px;
 }
 footer{
     text-align: center;
-    background-color: #5b2759;
+    background-color: #569dd5;
     color: #f5f5f5;
     padding: 16px 0;
 }
 .container{
-    width: 80% !important;
+    width: 95% !important;
     margin: 0 auto !important;
 }
 .container-title{
@@ -293,21 +302,28 @@ footer{
     padding: 1.5rem 0;
 }
 .resume a{
-    background-color: #569dd5;
+    background-color: #208bdd;
     padding: 8px 16px;
     border-radius: 8px;
     color: #f5f5f5;
     text-decoration: none;
     font-size: 1rem;
 }
+.resume a:hover{
+    background-color: #569dd5;
+    /* padding: 8px 16px;
+    border-radius: 8px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1rem; */
+}
 .wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap: 2rem;
-    width: 80% !important;
+    width: 95% !important;
     margin: 0 auto;
 }
-
 @media only screen and (max-width: 480px){
     nav{
         background-color: #1d1d1d;
@@ -338,7 +354,7 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 86%;
+        /* width: 86%; */
     }
     .description p{
         width: 95%;
@@ -357,6 +373,7 @@ footer{
         font-weight: bold;
         padding: 16px 0;
         font-size: 2.25rem;
+        color: #f5f5f5;
     }
     .btn-secondary{
         margin: 0 auto;
@@ -382,6 +399,8 @@ footer{
         width: 100%;
     }
     .wrapper {
+        display: flex;
+        justify-content: flex-start;
         overflow: scroll;
     }
 } 
@@ -430,7 +449,7 @@ footer{
 .front {
 	cursor: pointer;
 	height: 100%;
-	background-color: #569dd5;
+	background-color: #208bdd;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border-radius: 8px;
@@ -459,7 +478,8 @@ footer{
 	position: absolute;
 	border-radius: 8px;
 	height: 250px;
-	background: #569dd5;
+	background: #208bdd;
+	/* background: #569dd5; */
     display: flex;
     align-items: center;
 }
@@ -471,7 +491,7 @@ footer{
     height: 220px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    padding-top: 0.5rem;
 }
 .content h2 {
 	font-size: 35px;
