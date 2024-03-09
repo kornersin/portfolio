@@ -4,13 +4,6 @@ body{
     margin: 0;
     background-color: #353535 !important;
 }
-#working{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vmax;
-    background-color: #2d2d2d !important;
-}
 nav{
     background-color: #1d1d1d;
     color: #f5f5f5;
@@ -41,11 +34,6 @@ nav li {
 .menu-image{
     width: 24px;
 }
-/* nav li:hover{
-    color: #e006a3;
-    text-decoration: underline;
-    cursor: pointer;
-} */
 
 .title{
     font-weight: bold;
@@ -130,17 +118,15 @@ header img{
     padding: 2rem 0;
 }
 #projects{
-    /* background-color: #e1e1e1; */
     color: #f5f5f5;
     padding: 1rem 0;
 }
 .project-cards{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
     width: 95%;
     margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 }
 .card h4{
     color: #f5f5f5;
@@ -152,9 +138,7 @@ header img{
 }
 .card{
     padding: 8px;
-    /* box-shadow: 6px 8px 16px 0 rgba(12, 138, 230, 1); */
     border-radius: 16px !important;
-    width: 400px !important;
 }
 .card:hover{
     transform: scale(1.025, 1.025);
@@ -336,6 +320,10 @@ footer{
     width: 95% !important;
     margin: 0 auto;
 }
+.used-tools{
+    width: 45px;
+    padding: 0 4px;
+}
 @media only screen and (max-width: 480px){
     nav{
         background-color: #1d1d1d;
@@ -414,6 +402,9 @@ footer{
         display: flex;
         justify-content: flex-start;
         overflow: scroll;
+    }
+    .used-tools{
+        width: 40px;
     }
 } 
 
