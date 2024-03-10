@@ -283,10 +283,11 @@ footer{
     width: 100%;
 }
 .project-images{
-    background-color: #e7e7e7;
+    border: 2px solid #fff;
     border-radius: 8px;
     padding: 8px;
     margin-bottom: 8px;
+    color: #fff;
 }
 .project-images img{
     width: 100%;
