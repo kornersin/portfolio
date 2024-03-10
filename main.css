@@ -125,8 +125,9 @@ header img{
     gap: 1.5rem;
     width: 95%;
     margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .card h4{
     color: #f5f5f5;
@@ -137,6 +138,7 @@ header img{
     margin-top: 1rem;
 }
 .card{
+    width: 390px;
     padding: 8px;
     border-radius: 16px !important;
 }
@@ -145,7 +147,7 @@ header img{
     box-shadow: 6px 8px 16px 0 rgba(12, 138, 230, 0.5);
 
 }
-.card img{
+.card-img-top{
     height: 235px;
     width: 80%;
     margin: 0 auto;
@@ -407,6 +409,12 @@ footer{
     .used-tools{
         width: 40px;
     }
+    .card-img-top{
+        height: 200px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
 } 
 
 
@@ -504,43 +512,4 @@ footer{
 }
 .content h4 {
 	margin: 0;
-}
-#modalimage{
-    /* background-image: url(./assets/img/Bisit/61034656a889c52af4d682ae_desktop.jpeg); */
-    background-size: cover;
-    background-color: rgb(26, 99, 236);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.modal-header{
-    border-bottom: none !important;
-}
-.modal-footer{
-    border-top-style: none !important;
-}
-.big-gear img{
-    width: 15rem;
-    height: 15rem;
-    left: 34%;
-    position: absolute;
-    animation: spint 10s infinite;
-    transform: rotate(45deg);
-}
-.small-gear img{
-    width: 15rem;
-    height: 15rem;
-    position: absolute;
-    right: 34%;
-    animation: spin 10s infinite;
-    /* animation: spin duration timing-function delay iteration-count direction fill-mode; */
-}
-@keyframes spin {
-    100% {
-        transform: rotate(360deg)
-    }
-}
-@keyframes spint {
-    100% {
-        transform: rotate(-360deg)
-    }
 }
