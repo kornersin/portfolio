@@ -69,14 +69,14 @@ header img{
     width: 100%;
 }
 .profile_img{
-    background-image: url(./assets/img/body/profile_2.jpg);
+    background-image: url(./assets/img/body/profile.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 225px;
     height: 225px;
     border-radius: 100%;
-    padding: 16px;
+    padding: 8px;
 }
 .main-info{
     background-color: rgba(100,100,100,0.80);
